@@ -31,3 +31,6 @@ CREATE TABLE Forum.[Profile](
     CONSTRAINT FK_Profile_User foreign key (UserId) references forum.[User] (UserId)
         on update CASCADE on delete cascade
 );
+
+-- to drop a table
+DROP TABLE Forum.[User];
